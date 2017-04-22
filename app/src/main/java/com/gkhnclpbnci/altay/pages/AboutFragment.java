@@ -14,10 +14,11 @@ import com.gkhnclpbnci.altay.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class MagazaFragment extends Fragment {
+public class AboutFragment extends Fragment {
+
 
     Activity titleChange;
-    public MagazaFragment() {
+    public AboutFragment() {
         // Required empty public constructor
     }
 
@@ -26,14 +27,16 @@ public class MagazaFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        titleChange.setTitle("Mağaza");
-        return inflater.inflate(R.layout.fragment_magaza, container, false);
+        titleChange.setTitle("Hakkında");
+        View rootView = inflater.inflate(R.layout.fragment_about, container, false);
+
+        return rootView;
     }
 
+    //Activity metodunu fragment içinde kullanmak için attach işlemi yapıyoruz
     @Override
-    public  void onAttach(Activity activity){
+    public void  onAttach(Activity activity){
         super.onAttach(activity);
         titleChange=(MainActivity) activity;
     }
-
 }

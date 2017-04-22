@@ -14,10 +14,12 @@ import com.gkhnclpbnci.altay.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class HakkindaFragment extends Fragment {
+public class NewsFragment extends Fragment {
 
     Activity titleChange;
-    public HakkindaFragment() {
+
+
+    public NewsFragment() {
         // Required empty public constructor
     }
 
@@ -26,13 +28,16 @@ public class HakkindaFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        titleChange.setTitle("Hakkında");
-        return inflater.inflate(R.layout.fragment_hakkinda, container, false);
+        titleChange.setTitle("Haberler");
+        View rootView = inflater.inflate(R.layout.fragment_news, container, false);
+
+        return rootView;
     }
 
     @Override
-    public void  onAttach(Activity activity){
+    public  void  onAttach(Activity activity){
         super.onAttach(activity);
         titleChange=(MainActivity) activity;
     }
+
 }

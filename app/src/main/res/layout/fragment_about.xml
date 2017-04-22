@@ -1,0 +1,65 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gkhnclpbnci.altay.pages.AboutFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:text="ALTAY SPOR KULÜBÜ "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_ad"
+            android:textStyle="normal|bold"
+            android:textAlignment="center"
+            android:paddingBottom="5dp"
+            android:paddingEnd="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingStart="5dp"
+            android:paddingTop="5dp"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:text="Vali Kutlu Aktaş Tesisleri 690 Sk. No: 8 Gaziemir-İZMİR "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_adres"
+            android:inputType="textMultiLine"
+            android:textAlignment="center" />
+
+        <TextView
+            android:text="Telefon : 444 1914 "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_tel"
+            android:textAlignment="center" />
+
+        <TextView
+            android:text="e -posta : info@altay.org.tr "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_mail"
+            android:textAlignment="center" />
+
+        <TextView
+            android:text="Faks : 0232 252 33 23 "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_fax"
+            android:textAlignment="center" />
+    </LinearLayout>
+</FrameLayout>

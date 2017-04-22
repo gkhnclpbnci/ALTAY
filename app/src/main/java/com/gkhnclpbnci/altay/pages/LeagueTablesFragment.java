@@ -1,5 +1,6 @@
 package com.gkhnclpbnci.altay.pages;
 
+
 import android.app.Activity;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -10,13 +11,13 @@ import android.view.ViewGroup;
 import com.gkhnclpbnci.altay.MainActivity;
 import com.gkhnclpbnci.altay.R;
 
-
-public class FiksturFragment extends Fragment {
+/**
+ * A simple {@link Fragment} subclass.
+ */
+public class LeagueTablesFragment extends Fragment {
 
     Activity titleChange;
-
-
-    public FiksturFragment() {
+    public LeagueTablesFragment() {
         // Required empty public constructor
     }
 
@@ -24,14 +25,18 @@ public class FiksturFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
         // Inflate the layout for this fragment
-        titleChange.setTitle("Fikstür");
-        return inflater.inflate(R.layout.fragment_fikstur, container, false);
+        titleChange.setTitle("Puan Durumu");
+        View rootView = inflater.inflate(R.layout.fragment_leaguetables, container, false);
+
+        return rootView;
     }
 
     @Override
-    public  void  onAttach(Activity activity){
+    public  void onAttach(Activity activity){
         super.onAttach(activity);
+
         titleChange=(MainActivity) activity;
     }
 

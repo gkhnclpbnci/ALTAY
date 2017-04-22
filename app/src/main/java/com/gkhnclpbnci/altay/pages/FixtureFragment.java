@@ -1,6 +1,5 @@
 package com.gkhnclpbnci.altay.pages;
 
-
 import android.app.Activity;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -11,15 +10,13 @@ import android.view.ViewGroup;
 import com.gkhnclpbnci.altay.MainActivity;
 import com.gkhnclpbnci.altay.R;
 
-/**
- * A simple {@link Fragment} subclass.
- */
-public class HaberlerFragment extends Fragment {
+
+public class FixtureFragment extends Fragment {
 
     Activity titleChange;
 
 
-    public HaberlerFragment() {
+    public FixtureFragment() {
         // Required empty public constructor
     }
 
@@ -28,8 +25,10 @@ public class HaberlerFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        titleChange.setTitle("Haberler");
-        return inflater.inflate(R.layout.fragment_haberler, container, false);
+        titleChange.setTitle("Fikstür");
+        View rootView =inflater.inflate(R.layout.fragment_fixture, container, false);
+
+        return rootView;
     }
 
     @Override

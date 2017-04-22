@@ -4,30 +4,28 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBarDrawerToggle;
+import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.ListView;
-import android.widget.Toast;
 
-import com.gkhnclpbnci.altay.pages.FiksturFragment;
-import com.gkhnclpbnci.altay.pages.HaberlerFragment;
-import com.gkhnclpbnci.altay.pages.HakkindaFragment;
-import com.gkhnclpbnci.altay.pages.MagazaFragment;
-import com.gkhnclpbnci.altay.pages.PuanDurumuFragment;
+import com.gkhnclpbnci.altay.pages.FixtureFragment;
+import com.gkhnclpbnci.altay.pages.NewsFragment;
+import com.gkhnclpbnci.altay.pages.AboutFragment;
+import com.gkhnclpbnci.altay.pages.StoreFragment;
+import com.gkhnclpbnci.altay.pages.LeagueTablesFragment;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends AppCompatActivity {
 
-    ImageView imageView;
-    Button button;
+    private static final String TAG = "MainActivity";
+
     DrawerLayout drawerLayout;
     ActionBarDrawerToggle toggle;
     ListView lw_SlideMenu;
@@ -45,10 +43,9 @@ public class MainActivity extends ActionBarActivity {
 
         lw_SlideMenu = (ListView) findViewById(R.id.lw_Menu);
         drawerLayout = (DrawerLayout) findViewById(R.id.drawerLayout);
-        imageView = (ImageView)findViewById(R.id.imageView1);
-        button = (Button)findViewById(R.id.button1);
 
-       // imageView.setVisibility(View.INVISIBLE);
+
+
 
 
 
@@ -62,6 +59,7 @@ public class MainActivity extends ActionBarActivity {
         items.add(new SlideMenuItem(titles[3]));
         items.add(new SlideMenuItem(titles[4]));
 
+        //Açılışta uygulama ismini alıyor
         appTitle=getSupportActionBar().getTitle();
         actionBarTitle=items.get(0).getTitle();
 
@@ -109,44 +107,50 @@ public class MainActivity extends ActionBarActivity {
         drawerLayout.setDrawerListener(toggle);
         displayPage(0);
 
+
     }
 
     private  void displayPage(int position){
+        Log.i(TAG, "displayPage: position value " + position);
         Fragment fragment=null;
         switch (position)
         {
             case 0:
-                fragment=new HaberlerFragment();
-                fragment_name="HaberlerFragment";
+                fragment=new NewsFragment();
+                fragment_name="NewsFragment";
                 break;
             case  1:
-                fragment=new PuanDurumuFragment();
-                fragment_name="PuanDurumuFragmet";
+                fragment=new LeagueTablesFragment();
+                fragment_name="LeagueTableFragment";
                 break;
             case 2:
-                fragment=new FiksturFragment();
-                fragment_name="FiksturFragment";
+                fragment=new FixtureFragment();
+                fragment_name="FixtureFragment";
                 break;
             case 3:
-                fragment=new MagazaFragment();
-                fragment_name="MagazaFragment";
+                fragment=new StoreFragment();
+                fragment_name="StoreFragment";
                 break;
             case 4:
-                fragment=new HakkindaFragment();
-                fragment_name="HakkindaFragmemt";
+                fragment=new AboutFragment();
+                fragment_name="AboutFragment";
                 default:
                     break;
         }
         if (fragment!=null){
 
+            //Fragment transaction nesnesi ile fragment ekranları arasında geçiş sağlıyor
             FragmentManager fragmentManager =getSupportFragmentManager();
             android.support.v4.app.FragmentTransaction transaction = fragmentManager.beginTransaction();
             transaction.replace(R.id.container,fragment).addToBackStack(fragment_name).commit();
 
+            //Stack te bulunan fragment sayısını alıyor
             int count =getSupportFragmentManager().getBackStackEntryCount();
             if(count!=0){
+                //Son fragment alınıyor
                 FragmentManager.BackStackEntry backStackEntry=getSupportFragmentManager().getBackStackEntryAt(count-1);
 
+                //Son fragment ile seçilen fragment aynı ise eski fragment siliniyor
                 if(backStackEntry.getName().contains(fragment_name)){
                     getSupportFragmentManager().popBackStack();
                 }
@@ -156,6 +160,8 @@ public class MainActivity extends ActionBarActivity {
     }
     @Override
     public void onBackPressed(){
+
+        //fragment sayısı bir ise uygulamadan çıkıyor
         if(getSupportFragmentManager().getBackStackEntryCount()!=1)
             super.onBackPressed();
         else {
@@ -193,7 +199,5 @@ public class MainActivity extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void gönder(View view) {
-        Toast.makeText(getApplicationContext(),"Arkaplan Rengi Değişti.", Toast.LENGTH_LONG).show();
-    }
+
 }
