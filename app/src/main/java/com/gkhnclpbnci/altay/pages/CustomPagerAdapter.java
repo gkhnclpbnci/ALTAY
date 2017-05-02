@@ -16,13 +16,26 @@ import com.gkhnclpbnci.altay.R;
 class CustomPagerAdapter extends PagerAdapter {
 
     int[] mResources = {
-            R.drawable.first,
-            R.drawable.second,
-            R.drawable.third,
-            R.drawable.fourth,
-            R.drawable.fifth,
-            R.drawable.sixth
-
+           R.drawable.magaza,
+           R.drawable.cubuklu_forma,
+           R.drawable.forma_beyaz,
+           R.drawable.forma_bayan,
+           R.drawable.forma_cocuk,
+           R.drawable.beyaz_tisort,
+           R.drawable.mavi_tisort,
+           R.drawable.tisort,
+           R.drawable.siyah_ust,
+           R.drawable.kirmizi_ust,
+           R.drawable.mavi_ust,
+           R.drawable.siyah_cizgili,
+           R.drawable.mavi_esofman_ust,
+           R.drawable.siyah_esofman_ust,
+           R.drawable.atki,
+           R.drawable.sal_atki,
+           R.drawable.bileklik,
+           R.drawable.viski_bardak,
+           R.drawable.bardak,
+           R.drawable.anahtar
     };
     Context mContext;
     LayoutInflater mLayoutInflater;
