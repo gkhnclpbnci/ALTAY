@@ -16,6 +16,7 @@ import com.gkhnclpbnci.altay.R;
  * A simple {@link Fragment} subclass.
  */
 public class LeagueTablesFragment extends Fragment {
+
     WebView puan;
 
     Activity titleChange;
