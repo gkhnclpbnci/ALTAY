@@ -8,6 +8,7 @@
     <string name="action_settings">Settings</string>
 
 
+
     <string-array name="slidemenu_item">
         <item>Haberler</item>
         <item>Puan Durumu</item>
