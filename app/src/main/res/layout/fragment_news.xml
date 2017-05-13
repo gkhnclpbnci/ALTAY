@@ -5,12 +5,9 @@
     tools:context="com.gkhnclpbnci.altay.pages.NewsFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="Haberler Sayfası"
-        android:textColor="@color/background_material_dark"
-        android:textSize="28sp" />
+    <ListView
+        android:id="@+id/haberlist"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />/>
 
 </FrameLayout>

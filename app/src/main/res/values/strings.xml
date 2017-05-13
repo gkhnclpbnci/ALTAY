@@ -18,4 +18,35 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="haber_baslik">
+
+        <item>ALTAY SEVDASI MESAFE TANIMAZ!</item>
+        <item>İKİ KÖKLÜ ÇINAR’DAN DOSTLUK MESAJI</item>
+        <item>ALTAY – KOCAELİSPOR FİNALİNE UÇAK ORGANİZASYONU</item>
+
+    </string-array>
+    <string-array name="haber_detay_array">
+
+        <item>2. Lig yolunda Kocaelispor ile Pazar günü Antalya’da oynayacağımız müsabakanın biletleri satışa çıkarken; Altay Gaziemir Vali Kutlu Aktaş Tesisleri’nde kurulan satış masasından biletini alan ilk taraftarımız Kazakistan’da yaşayan Altay Sevdalısı Levent Uz oldu.
+21 yıldır Kazakistan’ın en büyük şehri Almatı’da yaşayan iş adamı Levent Uz, uzun yolculuğunun ardından İzmir’e iner inmez soluğu Gaziemir Vali Kutlu Aktaş Tesislerimiz’de aldı.
+Kilometrelerin Altay sevdasına engel olamayacağını söyleyen Uz; ‘‘Türkiye ve İzmir’den uzağım, ancak kalbim hep memleketim ve Büyük Altay için çarpıyor. Tüm gelişmeleri basından takip ediyorum. Önemli müsabakaları hiç kaçırmadım, Kasımpaşa ve Konyaspor finallerinde tribündeydim. Bu yıl kulübümüzde önemli işler yapıldı. Hakkımız bir üst lig. Ben Altayımız için binlerce kilometre yol kat ettim. Mazeret yok; tüm Altay sevdalılarının Antalya’da ekibimize destek vermesi gerek.’’ dedi.</item>
+        <item>TFF 3. Lig Play-Off finalinde karşılaşacak olan Altay ve Kocaelispor, 2. Lig yolundaki son 90 dakika öncesi bir araya geldi. TFF İstanbul Riva tesislerinde gerçekleştirilen toplantıda zorlu müsabakanın protokolü imzalanırken; camiaların dostluk mesajı ön plana çıktı.
+14 Mayıs Pazar günü saat 19:00’da Antalya’da oynanacak 2. Lig yükselme Play-Off finali öncesi Altay ve Kocaelispor temsilcileri TFF Hasan Doğan Milli Takımlar Kamp ve Eğitim Tesisleri’nde düzenlenen toplantıda buluştu.
+Büyük finalin detaylarının netlik kazandığı toplantı sonunda çekilen kura sonucu Altaylı taraftarların müsabakayı protokol tarafında (BATI ve GÜNEY) yer alan tribünlerden izlemesi kararlaştırıldı. Talebin yüksek olması durumunda kale arkası tribünlerin de açılması planlanırken; İki ekibe de 35’er engelli seyirci kontenjanı verildi.
+Siyah-beyazlı taraftarlar için bilet satış noktaları; Altay Gaziemir Vali Kutlu Aktaş Tesisleri, Atatürk Stadı ve Altay 1914 Taraftar Derneği olarak belirlendi. 5 TL’lik biletler ayrı ayrı ibraz edilecek TC Kimlik numaraları ile satılacak. 1 kişi 5 ayrı TC Kimlik numarası ile en fazla 5 bilet alabilecek. Bilet satışına Cuma günü başlanacak, kalan biletler müsabaka günü Antalya Stadı gişesinden satışa çıkarılacak.
+ALTAY VE KOCAELİSPOR’DAN FAIR-PLAY ÇAĞRISI
+Toplantı sonunda müsabaka protokolü Altay Spor Kulübü Genel Müdürü Atakan Atalay ve Kocaelispor Yönetim Kurulu üyesi Teoman Gencay arasında imzalanırken; İki köklü kulübün dostluğunun baki olduğu belirtilerek, iyi olan tarafın kazanması temennisinde bulunuldu. Atalay ve Gencay müsabakayı kazanarak 2. Lig’e çıkacak ekibin her halükarda büyük sevinç aynı anda da kaybeden adına üzüntü duyacağını kaydetti.</item>
+
+        <item>Kulübümüz, 14 Mayıs Pazar günü saat 19:00’da Antalya’da Kocaelispor ile oynayacağımız Play-Off finaline taraftarlarımızın ulaşımı için havayolu organizasyonu düzenleyecektir.
+Pazar günü İzmir Adnan Menderes Havaalanı’ndan kaldırılması planlanan uçak, müsabaka sonrası İzmir’e geri dönecektir. Gidiş-geliş kişi başı 1.000 TL olarak belirlenmiştir.
+Sınırlı sayıdaki kontenjan için müracaatların Cumartesi günü saat 15:00’e kadar, 0554 516 63 62 nolu telefondan Kulüp idari personeli Hakan Uçkun’a yapılması gerekmektedir.</item>
+    </string-array>
+
+    <string-array name="icon_array">
+
+        <item>@drawable/haber_1</item>
+        <item>@drawable/haber_2</item>
+        <item>@drawable/haber_3</item>
+
+    </string-array>
 </resources>
