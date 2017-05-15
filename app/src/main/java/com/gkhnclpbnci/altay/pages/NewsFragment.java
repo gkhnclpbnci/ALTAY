@@ -2,14 +2,17 @@ package com.gkhnclpbnci.altay.pages;
 
 
 import android.app.Activity;
+import android.content.Intent;
 import android.content.res.TypedArray;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
+import com.gkhnclpbnci.altay.HaberDetay;
 import com.gkhnclpbnci.altay.MainActivity;
 import com.gkhnclpbnci.altay.R;
 
@@ -59,21 +62,21 @@ public class NewsFragment extends Fragment {
 
         list.setAdapter(adapter);
 
-      /*  list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
             @Override
             public void onItemClick(AdapterView<?> parent, View view,
                                     int position, long id) {
 
 
-                Intent i = new Intent(MainActivity.this, HaberDetay.class);
+                Intent i = new Intent(getActivity(), HaberDetay.class);
 
                 i.putExtra("haber_detay", haber_detay[position]);
 
-                startActivity(i);
+                getActivity().startActivity(i);
             }
 
-        });*/
+        });
 
         return  rootView;
 

@@ -64,13 +64,13 @@ public class ListViewAdapter extends BaseAdapter {
 
         haber_baslik_textview = (TextView) itemView.findViewById(R.id.haber_baslik);
 
-        // haber_detay_textview = (TextView) itemView.findViewById(R.id.haber_detay);
+       // haber_detay_textview = (TextView) itemView.findViewById(R.id.haber_detay);
 
         haber_icon_imageView = (ImageView) itemView.findViewById(R.id.haber_icon);
 
         haber_baslik_textview.setText(haber_baslik[position]);
 
-        //  haber_detay_textview.setText(haber_detay[position]);
+        // haber_detay_textview.setText(haber_detay[position]);
 
         haber_icon_imageView.setImageResource(haber_icon_int[position]);
 
