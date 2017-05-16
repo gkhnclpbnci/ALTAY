@@ -25,7 +25,7 @@ public class NewsFragment extends Fragment {
     ListViewAdapter adapter;
     private String[] haber_baslik;
     private String[] haber_detay;
-    private String[] image_detay;
+
     private TypedArray haber_icon;
     private int[] haber_icon_int;
     Activity titleChange;
