@@ -25,6 +25,7 @@ public class NewsFragment extends Fragment {
     ListViewAdapter adapter;
     private String[] haber_baslik;
     private String[] haber_detay;
+    private String[] image_detay;
     private TypedArray haber_icon;
     private int[] haber_icon_int;
     Activity titleChange;
@@ -72,6 +73,7 @@ public class NewsFragment extends Fragment {
                 Intent i = new Intent(getActivity(), HaberDetay.class);
 
                 i.putExtra("haber_detay", haber_detay[position]);
+                i.putExtra("image_detay",haber_icon_int[position]);
 
                 getActivity().startActivity(i);
             }
